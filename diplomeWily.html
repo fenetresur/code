@@ -1,7 +1,31 @@
 
 
 <html>
+<head>
+<style type="text/css">
 
+#fondiplo{
+      background-image: url("https://fenetresur.github.io/code/certificat.png");
+      background-size: 1050px;
+      background-repeat: no-repeat;
+      height: 100%;
+	  text-align:center;
+		font-family:Georgia, serif;
+	  }
+	  
+table{
+	width: 1050px;
+	}
+
+
+#titre 
+{font-size:xx-large;
+ font-weight:bolder;
+		text-align:center;
+}
+</style>
+
+</head>
   <header>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -31,23 +55,6 @@ function showDate(){
   document.getElementById('varDate').textContent = userInput;
 }
 </script>
-<style type="text/css">
-#diplo 
-{margin-left: 20px; 
-    margin-right: 12px;
-    margin-top: 10px;  
-    background-color: #fefe99;
-    border: 3px solid #314252; 
-		text-align:center;
-		font-family:Georgia, serif;
-}
-
-#titre 
-{font-size:xx-large;
- font-weight:bolder;
-		text-align:center;
-}
-</style>
 
  </header>
   <body>
@@ -68,31 +75,35 @@ Pour établir ton diplôme, complète les champs suivants :<br>
 </table>
 <br>
 <br>
-<div id="diplo">
-<br>
+<table>
+	<tr>
+	<td id="fondiplo">
+<br><br><br><br><br><br><br>
 <span id="titre"> DIPLOME <br> MISSIONS IRD </span>
 <br><br>
-L'élève <span id="varStat"></span><strong><span id="varNom" style="text-transform:uppercase;font-size:large"></span> <span id="varPnom"style="text-transform:capitalize;font-size:large"></span></strong>, <br>
+L'élève </span><strong><span id="varNom" style="text-transform:uppercase;font-size:large"></span> <span id="varPnom"style="text-transform:capitalize;font-size:large"></span></strong>, <br>
 en classe de <span id="varClasse"></span> au <span id="varEtab" style="text-transform:capitalize"></span> <br>
 a terminé le jeu <b>Missions Wily</b>.<br><br><br>
 <img src="https://sites.google.com/site/irdcollege/_/rsrc/1363192751457/home/logo_missionsIRD.PNG">
 <br><br>
 
-<ul><u>Pour réussir le jeu, l'élève a été capable de :</u>
-	<li>distinguer le navigateur du moteur de recherche</li>
-	<li>analyser la nature des sites web</li>
-	<li>identifier les liens publicitaires</li>
-	<li>repérer les indices de fiabilité d'un site web</li>
-</ul>
+<u>Pour réussir le jeu, l'élève a été capable de :</u><br>
+	* distinguer le navigateur du moteur de recherche<br>
+	* analyser la nature des sites web<br>
+	* identifier les liens publicitaires<br>
+	* repérer les indices de fiabilité d'un site web<br>
+
 
 <br><br>
 
 Décerné à <span id="varVille" style="text-transform:capitalize"></span>, le <span id="varDate"></span>
 <br>
 Par <a href="http://fenetresur.wordpress.com">fenetresur</a>
-<br><br>
+<br><br><br><br><br><br>
 
-</div>
+</td>
+</tr>
+</table>
 	
 	  </body>
 </html>
